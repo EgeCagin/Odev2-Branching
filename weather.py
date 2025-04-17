@@ -1,9 +1,8 @@
-# Basit Hava Durumu Uygulaması (Main Branch)
-# Hazırlayan: Ege Çağın Tepe
+from colorama import Fore, Style, init
+init(autoreset=True)
 
 def get_weather(city):
-    # Gerçek API yerine örnek veri döndürüyoruz
-    return f"{city} için hava durumu: Güneşli, 25°C"
+    return f"{Fore.YELLOW}{city} için hava durumu: Güneşli, 25°C"
 
 city = input("Şehir giriniz: ")
 print(get_weather(city))
